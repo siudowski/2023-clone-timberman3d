@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Art/UI/ui-base-style.uss?fileID=7433441132597879392&amp;guid=4204b79ed9ea172479e6a73c38f7f8ab&amp;type=3#ui-base-style" />
+    <ui:VisualElement name="TitleLayout" style="flex-grow: 1; display: flex; opacity: 1;">
+        <ui:VisualElement name="TitleCard" style="align-items: center; width: auto; height: 150px; justify-content: center; flex-grow: 1; flex-basis: auto; flex-shrink: 1; display: flex;">
+            <ui:Label text="Timberman" display-tooltip-when-elided="true" name="TitleCardName" class="label-main-title" />
+            <ui:Label text="siudowski&apos;s" display-tooltip-when-elided="true" name="TitleCardAuthor" class="label-main-author" />
+        </ui:VisualElement>
+        <ui:VisualElement name="TitleMuteMusicButtonCard" style="margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;">
+            <ui:Button display-tooltip-when-elided="true" name="MuteButton" focusable="false" class="button-mute" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="EndLayout" style="flex-grow: 1; align-items: center; justify-content: center; display: none;">
+        <ui:Label text="Game over!" display-tooltip-when-elided="true" name="EndGameLabel" class="label-main-regular" />
+    </ui:VisualElement>
+    <ui:VisualElement name="HelperLayout" style="align-items: center; flex-grow: 1; justify-content: flex-end; display: none;">
+        <ui:Label text="Tap A &amp; D&#10;to play" display-tooltip-when-elided="true" name="HelperLabel" class="label-main-regular" />
+    </ui:VisualElement>
+    <ui:VisualElement name="GameLayout" style="flex-grow: 1; align-items: center; display: none;">
+        <ui:Label text="12345" display-tooltip-when-elided="true" name="GameLabelScore" class="label-main-regular" style="margin-left: 40px; margin-right: 40px; margin-top: 40px; margin-bottom: 40px;" />
+        <ui:ProgressBar low-value="0" high-value="1" name="GameTimerBar" style="height: 10%; width: 50%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; justify-content: space-around; align-items: stretch;" />
+    </ui:VisualElement>
+</ui:UXML>
